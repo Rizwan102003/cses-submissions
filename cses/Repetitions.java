@@ -11,9 +11,8 @@ class repetitions
             if (dna.charAt(i) == dna.charAt(i - 1)) {
                 currentCount++;
                 maxCount = Math.max(maxCount, currentCount);
-            } else {
-                currentCount = 1;
             }
+            else currentCount = 1;
         }
         System.out.println(maxCount);
     }
